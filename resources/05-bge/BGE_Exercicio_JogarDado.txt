@@ -1,0 +1,6 @@
+import random		   
+from bge import logic       
+cont=logic.getCurrentController()	           
+own=cont.owner	     
+rand=random.randint(1, 2)	 
+own['Dice']=rand

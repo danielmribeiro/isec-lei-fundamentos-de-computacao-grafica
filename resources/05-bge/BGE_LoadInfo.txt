@@ -1,0 +1,5 @@
+import bge
+cont = bge.logic.getCurrentController()
+own = cont.owner
+props = bge.logic.player_props
+own['Points'] = props['Pts']

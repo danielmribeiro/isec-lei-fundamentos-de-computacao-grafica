@@ -1,0 +1,7 @@
+from bge import logic 
+cont=logic.getCurrentController()	           
+own=cont.owner	     
+if own['PosP1']<=6:    
+	own.position = [0.0, -own['PosP1']*2.0+10.0, 0.5]
+elif own['PosP1']>=7:   
+	own.position = [-(own['PosP1']-6)*2.0, -2.0, 0.5]

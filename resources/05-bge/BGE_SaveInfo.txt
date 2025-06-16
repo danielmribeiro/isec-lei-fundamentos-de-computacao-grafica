@@ -1,0 +1,6 @@
+import bge
+cont = bge.logic.getCurrentController()
+own = cont.owner
+props = {}
+props['Pts'] = own["Text"]
+bge.logic.player_props = props
